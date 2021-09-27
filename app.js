@@ -11,7 +11,6 @@ server.get('/taf/api/downloadUrl', (req, res, next) => {
     db.query(sql, function (result) {
         res.send(JSON.stringify(result));
     })
-    res.send(JSON.stringify({test:1}));
 })
 
 server.listen(8100, () => {
